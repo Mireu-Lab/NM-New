@@ -1,0 +1,12 @@
+version: '3'
+
+service:
+  app:
+    build: ../../app
+
+    image: asia-northeast3-docker.pkg.dev/testprojects-453622/test:app
+
+  lavalink:
+    build: ../../lavalink
+
+    image: asia-northeast3-docker.pkg.dev/testprojects-453622/test:lavalink
